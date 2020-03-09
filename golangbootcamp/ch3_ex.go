@@ -1,5 +1,5 @@
 // http://www.golangbootcamp.com/book/types
-package main
+package ch7
 
 import "fmt"
 

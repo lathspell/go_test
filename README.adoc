@@ -2,6 +2,10 @@
 
 == Reading List
 
+=== Best Practices
+
+* https://github.com/golang/go/wiki/CodeReviewComments
+
 === Tools
 
 * https://staticcheck.io/
