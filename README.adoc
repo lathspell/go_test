@@ -19,3 +19,19 @@
 
 * https://golang.org/doc/effective_go.html#embedding
 * https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/
+
+== Setup ==
+
+All source code, my own as well as everything downloaded, resides
+in one directory:
+
+    export GOPATH=$HOME/go
+
+Below that is `src/`, `modules/` and `bin/` which is suggested to be added
+to the `PATH` variable.
+
+Tools that are recommended are installed using go itself:
+
+    go get golang.org/x/tools/cmd/godoc
+    go get golang.org/x/tools/cmd/vet
+    go get github.com/golang/lint/golint

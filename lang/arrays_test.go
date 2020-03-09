@@ -34,3 +34,16 @@ func TestArraySlices(t *testing.T) {
 	s2 = append(s2, "c")
 	assert.Equal(t, []string{"", "b", "", "c"}, s2)
 }
+
+func TestEmptySlices(t *testing.T) {
+	var a []int // a points to NIL
+	assert.Equal(t, 0, len(a))
+
+	b := []int{} // b points to an empty array slice
+	assert.Equal(t, 0, len(b))
+
+	// both can be used to append values
+	a = append(a, 3)
+	b = append(b, 3)
+	assert.Equal(t, a, b)
+}
