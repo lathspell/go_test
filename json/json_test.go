@@ -1,7 +1,7 @@
 package json
 
 import (
-	json2 "encoding/json"
+	"encoding/json"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
@@ -22,20 +22,20 @@ func TestSerialize(t *testing.T) {
 		DatabaseId: 42421,
 	}
 
-	json,err := json2.Marshal(traveler)
+	jsonStr,err := json.Marshal(traveler)
 	if err != nil {
 		t.Errorf("Error marshalling JSON: %s", err.Error())
 	}
 
 	expected := `{"first_name":"Tom","age":12}`
-	assert.Equal(t, expected, string(json))
+	assert.Equal(t, expected, string(jsonStr))
 }
 
 func TestUnserialize(t *testing.T) {
-	json := `{"first_name":"Tim","age":23}`
+	jsonStr := `{"first_name":"Tim","age":23}`
 	traveler := Traveler{}
 
-	if err := json2.Unmarshal([]byte(json), &traveler); err != nil {
+	if err := json.Unmarshal([]byte(jsonStr), &traveler); err != nil {
 		assert.Fail(t, err.Error())
 	}
 
