@@ -8,6 +8,7 @@
 
 === Tools
 
+* https://magefile.org/
 * https://staticcheck.io/
 * https://github.com/golang/tools/tree/master/gopls
 
