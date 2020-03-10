@@ -16,6 +16,14 @@ func TestForLoops(t *testing.T) {
 	assert.Equal(t, 42, counter)
 }
 
+func TestForLoops2(t *testing.T) {
+	a := []byte("abcd")
+	for i, j := 0, len(a)-1; i < j; i, j = i+1, j-1 {
+		a[i], a[j] = a[j], a[i] // multi-assignment makes temporary variables unnecessary
+	}
+	assert.Equal(t, "dcba", string(a))
+}
+
 func TestWhileLoops(t *testing.T) {
 	counter := 0
 
@@ -59,4 +67,18 @@ func TestSwitch(t *testing.T) {
 	default:
 		t.Fail()
 	}
+}
+
+func helpTestDeferClose(s *[]byte) {
+	(*s)[0] = '*'
+}
+
+func helpTestDefer() (out []byte) {
+	defer helpTestDeferClose(&out) // will be called just after "return"
+	return []byte("_abc")
+}
+
+// Example for "defer" (uses byte slice as strings are somewhat special)
+func TestDefer(t *testing.T) {
+	assert.Equal(t, "*abc", string(helpTestDefer()))
 }
