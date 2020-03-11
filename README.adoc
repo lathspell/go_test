@@ -9,8 +9,6 @@
 === Tools
 
 * https://magefile.org/
-* https://staticcheck.io/
-* https://github.com/golang/tools/tree/master/gopls
 
 === Libraries
 
@@ -37,3 +35,8 @@ Tools that are recommended are installed using go itself:
     go get golang.org/x/tools/cmd/godoc
     go get golang.org/x/tools/cmd/vet
     go get github.com/golang/lint/golint
+
+=== Tools ===
+
+* Language Server - https://github.com/golang/tools/tree/master/gopls
+* Static Checker - https://staticcheck.io/
