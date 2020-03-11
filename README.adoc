@@ -1,25 +1,5 @@
 = Learning GO
 
-== Reading List
-
-=== Best Practices
-
-* https://github.com/golang/go/wiki/CodeReviewComments
-
-=== Tools
-
-* https://magefile.org/
-
-=== Libraries
-
-* https://godoc.org/text/template
-
-=== Further Topisc
-
-* https://blog.golang.org/error-handling-and-go
-* https://golang.org/doc/effective_go.html#embedding
-* https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/
-
 == Setup ==
 
 All source code, my own as well as everything downloaded, resides
@@ -40,3 +20,21 @@ Tools that are recommended are installed using go itself:
 
 * Language Server - https://github.com/golang/tools/tree/master/gopls
 * Static Checker - https://staticcheck.io/
+* Makefiles written in Go - https://magefile.org/
+
+== Libraries
+
+* TODO: Text Templating - https://godoc.org/text/template
+
+== Links
+
+Best Practices:
+
+* https://github.com/golang/go/wiki/CodeReviewComments
+
+Tutorials:
+
+* TODO: https://blog.golang.org/error-handling-and-go
+* TODO: https://golang.org/doc/effective_go.html#embedding
+* TODO: https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/
+
