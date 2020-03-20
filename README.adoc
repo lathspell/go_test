@@ -24,7 +24,7 @@ Tools that are recommended are installed using go itself:
 
 == Libraries
 
-* TODO: Text Templating - https://godoc.org/text/template
+* TODO: Configuration https://github.com/spf13/viper
 
 == Links
 
