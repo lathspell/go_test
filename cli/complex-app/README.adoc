@@ -1,0 +1,20 @@
+CLI and Config handling
+=======================
+
+cobra::
+    CLI handling.
+    See https://github.com/spf13/cobra
+
+viper::
+    Config handling (files, environment variables, remote locations).
+    See https://github.com/spf13/viper
+
+Example:
+
+----
+    echo "env: asinyml" > complex-app.yml
+
+    ./complex-app deploy                    # prints "asinyml"
+    CMPLX_ENV=foo ./complex-app deploy      # prints "foo"
+    ./complex-app deploy --env=bar          # prints "bar"
+----
